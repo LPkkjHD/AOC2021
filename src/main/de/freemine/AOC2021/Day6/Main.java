@@ -18,7 +18,7 @@ public class Main {
                 .collect(Collectors.toMap(Map.Entry::getKey, e -> e.getValue().size()));
 
         long[] eachState = new long[9];
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 9; i++) {
             if (collect.get(i) != null)
                 eachState[i] = collect.get(i);
         }
