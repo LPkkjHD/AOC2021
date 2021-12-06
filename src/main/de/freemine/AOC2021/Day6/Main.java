@@ -9,7 +9,10 @@ public class Main {
     private static final String OUTPUT_TEXT = "Fish after %s days: %s \n";
 
     public static void main(String[] args) {
-        List<Integer> input = Arrays.stream(args[0].split(",")).map(Integer::parseInt).collect(Collectors.toList());
+        List<Integer> input = Arrays
+                .stream(args[0].split(","))
+                .map(Integer::parseInt)
+                .collect(Collectors.toList());
         Map<Integer, Integer> collect = input
                 .stream()
                 .collect(Collectors.groupingBy(Integer::intValue))
