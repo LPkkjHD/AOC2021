@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Main {
+public class Day6 {
     private static final String OUTPUT_TEXT = "Fish after %s days: %s \n";
 
     public static void main(String[] args) {
